@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surpresa</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <center>
+        <br><br><br><br>
+        <svg width="370px" height="155px">
+    
+            <path id="meuPath" fill="none" stroke="none" stroke-miterlimit="10" d="M20,20 l100,0 l100,30 q0,100 150,100" />
+        
+            <text fill="red" text-anchor="middle">
+                    :)
+                <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
+                    <mpath xlink:href="#meuPath"/>
+                </animateMotion>
+            </text>
+            <text fill="red" text-anchor="middle">
+                    espetacular
+                <animateMotion dur="6s" repeatCount="indefinite" rotate="auto" begin="0.5s">
+                    <mpath xlink:href="#meuPath"/>
+                </animateMotion>
+            </text>
+            <text fill="red" text-anchor="middle">
+                    é 
+                <animateMotion dur="6s" repeatCount="indefinite" rotate="auto" begin="1.05s">
+                    <mpath xlink:href="#meuPath"/>
+                </animateMotion>
+            </text>
+            <text fill="red" text-anchor="middle">
+                   Você
+                <animateMotion dur="6s" repeatCount="indefinite" rotate="auto" begin="1.6s">
+                    <mpath xlink:href="#meuPath"/>
+                </animateMotion>
+            </text>
+        </svg>
+        <br><br>       
+        <div class="textos">
+            <h2>Motivos para a senhora aceitar o pedido:
+                <br>
+                - sou carinhoso (até demais)☝🏿
+                <br>
+                - te faço bem🤷🏿
+                <br>
+                - nos damos muito bem😇
+                <br>
+                - sempre te dou presentinhos🤏🏿
+                <br>
+                - nunca te estresso🙇🏿
+                <br>
+                - sou a combinação perfeita entre ser amoroso e tarado ao mesmo tempo 🫷🏿
+                <br>
+                - deixo você pisar em mim🫸🏿
+                <br>
+                - amo muito você ☝🏿
+                <br>
+                - sua família já gosta de mim🙅🏿
+                <br>
+                - nós somos feitos um para o outro 🫵🏿
+                <br><br>
+                - VOCÊ VAI ACEITAR SIM E SE NÃO ACEITAR, TERÇA A GENTE CONVERSA👹
+            </h2>
+            <br><br><img src="https://media1.giphy.com/media/RKNaItV82Lm7Jo52hH/200w.gif?cid=82a1493bi62m8shvfjkjd46rncstmv0wnb0ogfedq1fk79b3&ep=v1_gifs_related&rid=200w.gif&ct=s">
+            <h1>Motivos para aceitar o meu pedido acima😍</h1>
+
+            <div class="pedido">
+                <h1>Você aceita namorar comigo?</h1>
+                <button class="btn" id="sim">Sim</button>
+                <button class="btn" id="nao">Não</button>
+            </div>
+            <script>
+                var nao = document.getElementById("nao");
+                nao.addEventListener("click", function() {
+                    var randomX = Math.floor(Math.random() * window.innerWidth);
+                    var randomY = Math.floor(Math.random() * window.innerHeight);
+                    nao.style.position = "absolute";
+                    nao.style.top = randomY + "px";
+                    nao.style.left = randomX + "px";
+                });
+            
+                var sim = document.getElementById("sim");
+                sim.addEventListener("click", function() {
+                    alert("Bom mesmo que você fez a decisão certa! Te amo.")
+                });
+            </script>
+        </div>
+        <div class="imagens">
+            <img src="coracao.webp">
+            <img src="sherek.jpeg">
+            <img src="florzinha.webp">
+            <img src="uwu.jpeg">
+            <img src="uwu2.jpeg">
+            <img src="cachorroo.jpeg">
+
+        </div>
+        </center>
+</body>
+</html>
